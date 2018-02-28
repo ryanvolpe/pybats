@@ -1,4 +1,5 @@
-# pybats [![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Travis](https://img.shields.io/travis/ryanvolpe/pybats.svg?style=flat-square)](https://travis-ci.org/ryanvolpe/pybats)
+# pybats [![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Travis](https://img.shields.io/travis/ryanvolpe/pybats.svg?style=flat-square)](https://travis-ci.org/ryanvolpe/pybats) [![Codecov](https://img.shields.io/codecov/c/github/ryanvolpe/pybats.svg?style=flat-square)](https://codecov.io/gh/ryanvolpe/pybats)
+
 
 Command line utility testing inspired by [**Bats**][sstephenson/bats]<sup id='a1'>[1](#f1)</sup>.
 
