@@ -7,6 +7,16 @@ import uuid
 # unit tests
 
 
+def test_matchable_string_match():
+    t = core.MatchableString('testing')
+    assert t.match(r'^test\w+$')
+
+
+def test_matchable_string_search():
+    t = core.MatchableString('testing')
+    assert t.search('ing')
+
+
 def test_context_immutability():
     context = core.Context()
     try:
@@ -57,3 +67,10 @@ def test_environment():
     with context.command('echo $ANSWER $MORE', shell=True) as cmd:  # nosec
         assert cmd.status == 0
         assert cmd.output == '42 yes'
+
+
+def test_command_not_found():
+    context = core.Context()
+    with context.command('xxx-command-not-found-13knfqf31') as cmd:
+        assert cmd.status == 127
+        assert cmd.output.match(r'^pybats: xxx-command-not-found')
