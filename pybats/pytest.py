@@ -6,10 +6,6 @@ from . import core
 import pytest
 
 
-def throw(exc):
-    raise exc
-
-
 class PytestMatchableString(core.MatchableString):
     def assert_match(self, pattern):
         msg = "could not match '{}'".format(self)
