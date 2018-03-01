@@ -49,13 +49,13 @@ Skip test | ``skip [message]`` | —
 
 Let's use a few simple test cases to illustrate the differences between Bats and pybats:
 
-1. Does ``echo 'test'``:
- 1. print ``"test"``?
- 1. exit ``0``?
-1. Does ``util --help``:
- 1. print at least one line of output?
- 1. print a line that startswith ``"Usage:"``?
- 1. exit ``0``?
+- Does ``echo 'test'``:
+  - print ``"test"``?
+  - exit ``0``?
+- Does ``util --help``:
+  - print at least one line of output?
+  - print a line that startswith ``"Usage:"``?
+  - exit ``0``?
 
 #### Bats
 
