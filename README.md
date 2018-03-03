@@ -55,6 +55,16 @@ def test_cli_unknown_option():
     assert re.match(r'(?i)Usage: democli', lines[-1])
 ~~~
 
+## Alternatives
+
+<dl>
+    <dt><a href='https://bitheap.org/cram'>cram</a></dt>
+    <dd>
+        <blockquote>a functional testing framework for command line applications based on Mercurial's unified test format</blockquote>
+        Worth taking a look at, especially for writing tests in a declarative style.
+    </dd>
+</dl>
+
 ## Author's note
 
 The original goal of this project was to run Bats tests as-written from within [pytest].
