@@ -64,7 +64,6 @@ While deliberating on how to integrate the test states, the question of “why a
 ---
 
 1. [@sstephenson] is the original author of Bats, and the reference link points to the original repo accordingly. After a period of inactivity, the code was forked and development now continues at [bats-core/bats-core]. <small><a href='#a1' id='f1'>↩</a></small>
-1. ``erroutput``<small>[↩](#a2.1)</small> and ``errlines``<small>[↩](#a2.2)</small> are only populated if stderr is redirected; see [the docs][pybats-docs] for details.
 
 
 [@sstephenson]: https://github.com/sstephenson/
