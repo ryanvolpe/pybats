@@ -1,0 +1,19 @@
+=====
+Usage
+=====
+
+Test framework support
+======================
+
+pytest
+------
+
+Pybats registers a ``pytest11`` setuptools entry point. This entry point
+exposes a test fixture encapsulating the top-level pybats API.
+
+.. code:: python
+   
+   def test_example(pybats):
+       with pybats.command('echo', 'test') as cmd:
+           assert cmd.status == 0
+           assert cmd.output == 'test'

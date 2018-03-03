@@ -1,0 +1,35 @@
+=========
+Reference
+=========
+
+:mod:`pybats.core`
+------------------
+
+.. module:: pybats.core
+
+.. autoclass:: Context
+   :members:
+
+   .. automethod:: command(\*args, \**kws) -> result
+
+      :rtype: CommandResult
+
+.. autoclass:: MatchableString
+   :show-inheritance:
+   :members:
+
+.. autoclass:: CommandResult
+   :members:
+   :undoc-members:
+
+:mod:`pybats.pytest`
+--------------------
+
+.. module:: pybats.pytest
+
+.. autofunction:: pybats() -> context
+   
+   :rtype: Context
+
+.. autoclass:: PytestMatchableString
+   :show-inheritance:
